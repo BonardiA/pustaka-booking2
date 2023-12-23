@@ -9,13 +9,13 @@ const Register = () => {
                         <form className="w-full max-w-full px-10 md:px-20">
                             <h1 className="pb-3 max-w-2xl text-gray-900 mb-4 text-3xl font-normal tracking-tight leading-none md:text-3xl xl:text-3xl">Sign up to <span className="text-[#D34FE5]">Perpus Booking</span></h1>
                             <div className="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label htmlFor="name">Name</label>
-                                    <input type="text" id="name" class="mb-5 bg-gray-50 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full px-5 py-3" placeholder="Name" required />
+                               <div>
+                                    <label htmlFor="firstname">First Name</label>
+                                    <input type="text" id="firstname" class="mb-5 bg-gray-50 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full px-5 py-3" placeholder="First Name" required />
                                 </div>
                                 <div>
-                                    <label htmlFor="username">Username</label>
-                                    <input type="text" id="username" class="mb-5 bg-gray-50 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full px-5 py-3" placeholder="Username" required />
+                                    <label htmlFor="lastname">Last Name</label>
+                                    <input type="text" id="lastname" class="mb-5 bg-gray-50 border border-purple-300 text-gray-900 text-sm rounded-lg focus:ring-purple-500 focus:border-purple-500 block w-full px-5 py-3" placeholder="Last Name" required />
                                 </div>
                             </div>
                             <label htmlFor="email">Email</label>
