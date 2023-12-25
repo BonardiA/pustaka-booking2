@@ -1,6 +1,16 @@
 import Image from '../../public/register.png';
 import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { DB } from '../firebase/db';
+
 const Register = () => {
+    const handleRegistration = () => {
+        const username = document.getElementById("firstname").value;
+        const name = document.getElementById("lastname").value;
+        const email = document.getElementById("email").value;
+        const password = document.getElementById("password").value;
+    }
+
     return (
         <>
             <section className="bg-white w-full md:px-28">
@@ -47,3 +57,4 @@ const Register = () => {
 };
 
 export default Register;
+export default DB;
