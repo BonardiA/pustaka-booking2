@@ -1,15 +1,34 @@
 import Image from '../../public/register.png';
 import { Link } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import { DB } from '../firebase/db';
 
 const Register = () => {
-    const handleRegistration = () => {
-        const username = document.getElementById("firstname").value;
-        const name = document.getElementById("lastname").value;
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-    }
+    const handleRegistration = async () => {
+        try {
+            const firstname = document.getElementById('firstname').value;
+            const lastname = document.getElementById('lastname').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Create a new user with email and password
+            const userCredential = await auth.createUserWithEmailAndPassword(
+                email,
+                password
+            );
+
+            // Update user profile with first and last name
+            await userCredential.user.updateProfile({
+                displayName: `${firstname} ${lastname}`,
+            });
+
+            // Redirect or perform other actions after successful registration
+            // You can replace '/dashboard' with the desired redirect path
+            window.location.href = '/dashboard';
+        } catch (error) {
+            console.error('Error during registration:', error.message);
+            // Handle registration error, e.g., display an error message
+        }
+    };
 
     return (
         <>
@@ -38,6 +57,7 @@ const Register = () => {
                             </div>
                             <button
                                 type="button"
+                                onClick={handleRegistration}
                                 className="text-white bg-gradient-to-r from-indigo-700 via-purple-400 to-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-2xl px-5 py-2.5 w-full"
                             >
                                 Sign Up
@@ -57,4 +77,3 @@ const Register = () => {
 };
 
 export default Register;
-export default DB;
