@@ -25,6 +25,7 @@ const LandingPage = () => {
             <p className="max-w-2xl mb-2 font-light text-gray-800 lg:mb-8 md:text-lg lg:text-xl">
               Rasakan pengalaman membaca yang nyaman
             </p>
+            
             <Link
               to="/login"
               class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 focus:outline-none dark:focus:ring-blue-800"
