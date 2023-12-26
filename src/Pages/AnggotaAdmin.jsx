@@ -4,6 +4,11 @@ function AnggotaAdmin() {
   return (
     <div>
       <div className="mb-5 font-bold text-2xl">Data Anggota</div>
+      <div>
+          <button className="bg-sky-500 text-white py-1 px-2 rounded-lg hover:bg-sky-600">
+            Tambah data
+          </button>
+        </div>
       <div className="float float-right mb-5">
         <input
           type="Search"
