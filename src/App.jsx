@@ -2,10 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import LandingPage from "./Pages/LandingPage";
 import Login from "./Pages/Login";
-import Register from "./Pages/Register"; 
+import Register from "./Pages/Register";
+import AdminLayout from "./Layouts/AdminLayout";
 function App() {
- 
-
   return (
     <div>
       <BrowserRouter>
@@ -13,6 +12,7 @@ function App() {
           <Route path="/" exact element={<LandingPage />} />
           <Route path="/login" exact element={<Login />} />
           <Route path="/register" exact element={<Register />} />
+          <Route path="/admin/*" exact element={<AdminLayout />} />
         </Routes>
       </BrowserRouter>
     </div>
