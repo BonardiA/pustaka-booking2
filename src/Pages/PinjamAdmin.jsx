@@ -28,6 +28,9 @@ function PinjamAdmin() {
                 Tanggal Pengembalian
               </th>
               <th scope="col" className="px-6 py-3">
+                Status
+              </th>
+              <th scope="col" className="px-6 py-3">
                 Aksi
               </th>
             </tr>
@@ -43,6 +46,11 @@ function PinjamAdmin() {
               <td className="px-6 py-4">Dede</td>
               <td className="px-6 py-4">15-12-2023</td>
               <td className="px-6 py-4">20-12-2023</td>
+              <td className="px-6 py-4">
+                <span className="bg-yellow-200 px-2 py-1 rounded">
+                  Dipinjam
+                </span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update
@@ -62,6 +70,11 @@ function PinjamAdmin() {
               <td className="px-6 py-4">Alipia</td>
               <td className="px-6 py-4">14-12-2023</td>
               <td className="px-6 py-4">23-12-2023</td>
+              <td className="px-6 py-4">
+                <span className="bg-yellow-200 px-2 py-1 rounded">
+                  Dipinjam
+                </span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update
@@ -81,6 +94,9 @@ function PinjamAdmin() {
               <td className="px-6 py-4">Bonardi</td>
               <td className="px-6 py-4">20-12-2023</td>
               <td className="px-6 py-4">30-12-2023</td>
+              <td className="px-6 py-4">
+                <span className="bg-green-200 px-2 py-1 rounded">Selesai</span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update

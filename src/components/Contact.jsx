@@ -2,7 +2,11 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div id="contact" className="flex justify-center gap-10 mb-20">
+    <div
+      id="contact"
+      className="flex justify-center flex-col items-center gap-10 mb-20 mt-20"
+    >
+      <div className="mb-5 font-bold text-3xl text-blue-500">CONTACT US</div>
       <div className="border-gray-400 border flex rounded-xl">
         <div className="w-[600px] p-10">
           <div className="mb-5 font-bold text-3xl text-blue-500">
@@ -42,7 +46,7 @@ export default function Contact() {
             </form>
           </div>
         </div>
-        <div className="flex flex-col  mb-10 w-[400px] bg-blue-700 p-10">
+        <div className="flex flex-col  rounded-e-xl w-[400px] bg-blue-700 p-10">
           <div className="mb-10 text-blue-200 text-3xl font-bold">
             Contact Information
           </div>

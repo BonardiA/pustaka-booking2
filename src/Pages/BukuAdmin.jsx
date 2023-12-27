@@ -49,7 +49,9 @@ function BukuAdmin() {
               </th>
               <td className="px-6 py-4">Andrea Hirata</td>
               <td className="px-6 py-4">Novel</td>
-              <td className="px-6 py-4">Ada</td>
+              <td className="px-6 py-4">
+                <span className="bg-green-200 px-2 py-1 rounded">Ada</span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update
@@ -68,7 +70,9 @@ function BukuAdmin() {
               </th>
               <td className="px-6 py-4">Leila S.Chudori</td>
               <td className="px-6 py-4">Novel</td>
-              <td className="px-6 py-4">Ada</td>
+              <td className="px-6 py-4">
+                <span className="bg-green-200 px-2 py-1 rounded">Ada</span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update
@@ -87,7 +91,9 @@ function BukuAdmin() {
               </th>
               <td className="px-6 py-4">Pramudya Ananta Toer</td>
               <td className="px-6 py-4">Novel</td>
-              <td className="px-6 py-4">Kosong</td>
+              <td className="px-6 py-4">
+                <span className="bg-red-200 px-2 py-1 rounded">Kosong</span>
+              </td>
               <td className="px-6 py-4 gap-2 flex items-center">
                 <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
                   Update
