@@ -1,8 +1,33 @@
 import Image from '../../public/register.png';
 import { Link } from 'react-router-dom';
-const Register = () => {
+import { useState } from 'react';
+import { Axios } from 'axios';
+
+const Register = () => {{
+        const [formData, setFormData] = useState({
+           firstname: '',
+           lastname: '',
+           email: '',
+           password: '',
+        });
+       
+        const handleChange = (e) => {
+           setFormData({ ...formData, [e.target.name]: e.target.value });
+        };
+       
+        const handleSubmit = async (e) => {
+           e.preventDefault();
+       
+           try {
+             const response = await axios.post('/api/register', formData);
+             console.log(response.data);
+           } catch (error) {
+             console.error(error);
+           }
+        };
+    }
+
     return (
-        <>
             <section className="bg-white w-full md:px-28">
                 <div className="grid w-full max-w-full py-8 mx-auto gap-4 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="mr-auto place-self-center md:col-span-6 w-full mb-10">
@@ -28,6 +53,7 @@ const Register = () => {
                             </div>
                             <button
                                 type="button"
+                                onClick={handleSubmit}
                                 className="text-white bg-gradient-to-r from-indigo-700 via-purple-400 to-purple-700 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-2xl px-5 py-2.5 w-full"
                             >
                                 Sign Up
@@ -42,7 +68,6 @@ const Register = () => {
                     </div>
                 </div>
             </section>
-        </>
     );
 };
 
