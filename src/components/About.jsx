@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <div id="about" className="text-center p-40">
+    <div id="about" className="text-center p-40 bg-blue-700 text-white">
       <div className="text-4xl mb-10 font-bold">
         Membaca Lebih Mudah Dengan <br />{" "}
         <span className="text-blue-700">Pustaka Booking</span>

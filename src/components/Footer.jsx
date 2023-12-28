@@ -35,7 +35,7 @@ function Footer() {
           <div className="font-bold text-xl text-blue-300">Follow Us</div>
         </div>
       </div>
-      <div className="bg-blue-700 text-center text-white font-semibold">
+      <div className="bg-blue-700 py-5 text-center text-white font-semibold">
         2023 Perpustakaan Booking. All Right Reserved
       </div>
     </>
