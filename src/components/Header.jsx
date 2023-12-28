@@ -19,6 +19,9 @@ export default function Header() {
           <NavLink to="/buku" smooth={true}>
             <li className="hover:text-sky-500">Buku</li>
           </NavLink>
+          <NavLink to="/data-booking" smooth={true}>
+            <li className="hover:text-sky-500">Booking Saya</li>
+          </NavLink>
           <Link to="contact" smooth={true}>
             <li className="hover:text-sky-500">Contact</li>
           </Link>
