@@ -74,9 +74,6 @@ function DataBooking() {
                   <th scope="col" className="px-6 py-3">
                     Status
                   </th>
-                  <th scope="col" className="px-6 py-3">
-                    Aksi
-                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -109,14 +106,6 @@ function DataBooking() {
                       >
                         {booking.status}
                       </span>
-                    </td>
-                    <td className="px-6 py-4 gap-2 flex items-center">
-                      <a className="font-medium bg-yellow-200 text-blue-950 py-1 px-2 rounded-lg">
-                        Update
-                      </a>
-                      <a className="font-medium bg-red-400 text-white py-1 px-2 rounded-lg">
-                        Delete
-                      </a>
                     </td>
                   </tr>
                 ))}
